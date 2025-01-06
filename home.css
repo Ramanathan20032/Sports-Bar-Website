@@ -589,6 +589,9 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #FADA7A;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 
+               0px 0px 15px rgba(250, 218, 122, 0.5), 
+               0px 0px 30px rgba(250, 218, 122, 0.4); 
 }
 .reviews-wrapper .reviews-container {
   max-width: 800px;

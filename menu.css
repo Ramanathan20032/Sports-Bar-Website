@@ -1,0 +1,85 @@
+/* 
+  font-family: "Oswald", serif;
+  font-family: "Oooh Baby", serif;
+  font-family: "Urbanist", serif; 
+  font-family: "Style Script", serif;
+  font-family: "Oleo Script", serif;
+*/
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Urbanist", serif;
+}
+
+/* ================================================================ */
+/* Navbar */
+.navbar-brand img{
+  width: 120px;
+}
+.nav-link{
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #441752;
+}
+.nav-link:hover{
+  color: #70128d;
+}
+.nav-link.btn-prime{
+  background-color: #441752;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.nav-link.btn-prime:hover {
+  background-color: #FADA7A;
+  color: #441752;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+
+/* ================================================================ */
+/* Media-Query : Navbar  */
+@media screen and (max-width: 576px){
+  .navbar-brand img{
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+
+/* Header Section */
+.menu-header {
+    padding-top: 100px;
+    /* background-image: url('https://via.placeholder.com/1200x400'); Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: rgb(10, 10, 10);
+  }
+ 
+  .menu-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+ 
+  /* Section Title */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

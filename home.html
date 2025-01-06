@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Oooh+Baby&family=Oswald:wght@200..700&family=Style+Script&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootsrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FontAwesome Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BoxIcons Links -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- Js File -->
+    <script src="home.js" defer></script>
+
+    <title>Sports Bar - Website</title>
+  </head>
+  
+  <body>
+    <!-- =============================================================================== -->
+    <!-- Header -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <!-- Navbar added at the top -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top py-0">
+        <div class="container-fluid px-3 px-md-5">
+          <a class="navbar-brand" href="home.html"
+            ><img src="Images/Header-Banner/Logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link active me-0 me-lg-3 p-3"
+                  style="color: #70128d"
+                  href="home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-3 p-3" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-3 p-3" href="drinks.html">Drinks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-3 p-3" href="event.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-3 p-3" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-3 p-3" href="about.html">About</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link btn-prime p-3 mb-2 mb-lg-0" href="#"
+                  >Reserve Table</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="Images/Header-Banner/banner-1.jpg"
+            class="banner-image"
+            alt="..."
+          />
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1>SideLines</h1>
+            <h3>Memorable Dining experience</h3>
+            <a class="banner-btn nav-link" href="#">Book Table</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="Images/Header-Banner/banner-2.jpg"
+            class="banner-image"
+            alt="..."
+          />
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1>Great Food</h1>
+            <h3>Exceptional service</h3>
+            <a class="banner-btn nav-link" href="menu.html">See Menu</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="Images/Header-Banner/banner-3.jpg"
+            class="banner-image"
+            alt="..."
+          />
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1>Full Bar</h1>
+            <h3>Available</h3>
+            <a class="banner-btn nav-link" href="drinks.html">Our Drinks</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="Images/Header-Banner/banner-4.jpg"
+            class="banner-image"
+            alt="..."
+          />
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1>We Host</h1>
+            <h3>Your Party</h3>
+            <a class="banner-btn nav-link" href="event.html">Our Events</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="Images/Header-Banner/banner-5.avif"
+            class="banner-image"
+            alt="..."
+          />
+          <div class="overlay"></div>
+          <div class="carousel-caption">
+            <h1>360° view</h1>
+            <h3>Best seat in the house</h3>
+            <a class="banner-btn nav-link" href="about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- About -->
+    <div class="about-wrapper">
+      <div class="container">
+        <div class="about-container row d-flex align-items-stretch">
+          <!-- col-1 -->
+          <div
+            class="img-content col-12 col-md-6 d-flex align-items-center justify-content-center mb-5 mb-md-0"
+          >
+            <img
+              src="Images/about-us/about-us-image.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <!-- col-2 -->
+          <div
+            class="text-content col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="card">
+              <div class="card-body p-3 p-sm-4">
+                <h1 class="up">Heading</h1>
+                <h4 class="mb-3 up">Sub heading</h4>
+                <p class="mb-3 mb-md-4 down">
+                  <i>
+                    Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. No one rejects, pleasure rationally
+                    encounter consequences that are extremely painful.
+                  </i>
+                </p>
+                <div class="text-center down">
+                  <a href="about.html" class="section-button nav-link">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- Menu -->
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="menu-container row">
+          <!-- col-1 -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card text-center m-left">
+              <img
+                src="Images/menu/menu-1.jpg"
+                alt=""
+                class="mx-auto d-block m-0 img-fluid p-1"
+              />
+              <div class="card-body">
+                <h5>Special title treatment</h5>
+                <p>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="menu.html" class="section-button nav-link">Food</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- col-2 -->
+          <div class="col-md-6">
+            <div class="card text-center m-right">
+              <img
+                src="Images/menu/menu-2.jpg"
+                alt=""
+                class="mx-auto d-block m-0 img-fluid p-1"
+              />
+              <div class="card-body">
+                <h5>Special title treatment</h5>
+                <p>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+                <a href="drinks.html" class="section-button nav-link">Drinks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- Gallery -->
+    <div class="gallery-wrapper">
+      <div class="container-fluid">
+        <div class="gallery-container">
+          <!-- 1 -->
+          <div class="row">
+            <!-- large image in the right -->
+            <div class="col-12 col-md-6 p-0 order-1 img-container">
+              <img
+                src="Images/gallery-Section/full-1.jpg"
+                alt="Burger"
+                class="img-fluid col-12 p-0"
+              />
+            </div>
+
+            <!-- pair Images in left -->
+            <div class="col-12 col-md-6 order-2">
+              <div class="row">
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-1.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-2.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-3.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-4.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-5.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-6.jpg"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="row">
+            <!-- First pair of images at the left end -->
+            <div class="col-12 col-md-4 order-2 order-md-1">
+              <div class="row">
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-3.jpg"
+                    alt="Image 3"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-4.jpg"
+                    alt="Image 4"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-5.jpg"
+                    alt="Image 5"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-6.jpg"
+                    alt="Image 6"
+                    class="img-fluid p-0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Large image in the center -->
+            <div class="col-12 col-md-6 p-0 order-1 order-md-2 img-container">
+              <img
+                src="Images/gallery-Section/full-1.jpg"
+                alt="Burger"
+                class="img-fluid col-12 p-0"
+              />
+            </div>
+
+            <!-- Other two sets of pairs -->
+            <div class="col-12 col-md-2 order-3">
+              <div class="row">
+                <div class="img-container col-6 col-md-12 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-1.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-12 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-2.jpg"
+                    alt="Image 2"
+                    class="img-fluid p-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="row">
+            <!-- First pair of images at the left end -->
+            <div class="col-12 col-md-2 order-2 order-md-1">
+              <div class="row">
+                <div class="img-container col-6 col-md-12 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-1.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-12 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-2.jpg"
+                    alt="Image 2"
+                    class="img-fluid p-0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Large image in the center -->
+            <div class="col-12 col-md-6 p-0 order-1 order-md-2 img-container">
+              <img
+                src="Images/gallery-Section/full-1.jpg"
+                alt="Burger"
+                class="img-fluid col-12 p-0"
+              />
+            </div>
+
+            <!-- Other two sets of pairs -->
+            <div class="col-12 col-md-4 order-3">
+              <div class="row">
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-3.jpg"
+                    alt="Image 3"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-4.jpg"
+                    alt="Image 4"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-5.jpg"
+                    alt="Image 5"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-6 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-6.jpg"
+                    alt="Image 6"
+                    class="img-fluid p-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="row">
+            <!-- large image in the right -->
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="row">
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-1.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-2.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-3.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-4.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-5.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+                <div class="img-container col-6 col-md-4 p-0">
+                  <img
+                    src="Images/gallery-Section/row(1)-6.jpg"
+                    alt="Image 1"
+                    class="img-fluid p-0"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- pair Images in left -->
+            <div class="col-12 col-md-6 p-0 order-1 order-md-2 img-container">
+              <img
+                src="Images/gallery-Section/full-1.jpg"
+                alt="Burger"
+                class="img-fluid col-12 p-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox container -->
+      <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img
+          class="lightbox-image"
+          id="lightboxImage"
+          src=""
+          alt="Enlarged view"
+        />
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- Event -->
+    <div class="event-wrapper">
+      <div class="container p-2 py-3">
+        <div class="event-container text-center p-2">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 p-2 e-zoom">
+              <img src="Images/event/event-1.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2 e-zoom">
+              <img src="Images/event/event-2.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2 e-zoom">
+              <img src="Images/event/event-3.jpeg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 p-2 e-zoom">
+              <img src="Images/event/event-4.jpeg" alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <a href="event.html" class="section-button nav-link my-3">More Events</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- Reviews -->
+    <div class="reviews-wrapper">
+      <div class="container">
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+          <h1 class="review-heading text-center">cache tag line</h1>
+
+          <div class="carousel-inner">
+            <!-- Review 1 -->
+            <div class="carousel-item active">
+              <div class="reviews-container text-center">
+                <h5 class="review-title">Review by - Google</h5>
+                <p class="review-author mb-1">Melissa M.:</p>
+                <p class="review-rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
+                <blockquote class="review-text">
+                  "Great atmosphere! Excellent service! I am found this place."
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="carousel-item">
+              <div class="reviews-container text-center">
+                <h5 class="review-title">Review by - Yelp</h5>
+                <p class="review-author mb-1">John D.:</p>
+                <p class="review-rating">⭐ ⭐ ⭐ ⭐</p>
+                <blockquote class="review-text">
+                  "Amazing food and great ambiance. Definitely a place worth
+                  visiting!"
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#reviewCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#reviewCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#reviewCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#reviewCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================================== -->
+    <!-- Footer -->
+    <div class="footer-wrapper bg-white">
+      <div class="container-fluid">
+        <div class="footer-container">
+          <div class="row">
+            <!-- 1 -->
+            <div
+              class="col-12 col-sm-6 col-lg-3 d-flex flex-column px-3 py-3 p-sm-3"
+            >
+              <div class="footer-section contact">
+                <h3 class="title">Contact</h3>
+                <p class="mb-2">
+                  <a
+                    href="https://maps.app.goo.gl/ZP46hVyS2d5kS1Sp7"
+                    class="address"
+                    target="_blank"
+                    ><i class="fa-solid fa-location-dot pe-2"></i>307 Main St
+                    #105, Frisco, TX 75034</a
+                  >
+                </p>
+                <p class="phone mb-2">
+                  <i class="fa-solid fa-phone pe-2"></i>+14692000501
+                </p>
+                <p>
+                  <a href="mailto:care@a2bnewjersey.com" class="mail"
+                    ><i class="fa-regular fa-envelope pe-2"></i>
+                    care@a2bnewjersey.com</a
+                  >
+                </p>
+                <div class="social-icons mt-2">
+                  <a href="#" class="pe-2"
+                    ><i
+                      class="fab fa-twitter s-icon"
+                      style="font-size: 20px"
+                    ></i
+                  ></a>
+                  <a href="#" class="pe-2"
+                    ><i
+                      class="fab fa-facebook s-icon"
+                      style="font-size: 20px"
+                    ></i
+                  ></a>
+                  <a href="#" class="pe-2"
+                    ><i
+                      class="fab fa-youtube s-icon"
+                      style="font-size: 20px"
+                    ></i
+                  ></a>
+                  <a href="#" class="pe-2"
+                    ><i
+                      class="fab fa-linkedin s-icon"
+                      style="font-size: 20px"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div
+              class="col-12 col-sm-6 col-lg-3 d-flex flex-column px-3 py-3 p-sm-3"
+            >
+              <div class="footer-section quick-links">
+                <h3 class="title">Quick Links</h3>
+                <ul class="p-0">
+                  <li>
+                    <a href="home.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="menu.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="drinks.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >Drinks</a
+                    >
+                  </li>                  
+                  <li>
+                    <a href="event.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >Event</a
+                    >
+                  </li>                  
+                  <li>
+                    <a href="gallery.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html"
+                      ><i class="fa-sharp fa-solid fa-circle-check pe-1"></i
+                      >About Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div
+              class="col-12 col-sm-6 col-lg-3 d-flex flex-column px-3 py-3 p-sm-3"
+            >
+              <div class="footer-section map">
+                <h3 class="title">Map</h3>
+                <iframe
+                  class="w-100"
+                  style="height: 200px; border: 0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.2711669295964!2d-96.8774862848416!3d33.15163158086053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c338e4ddc768b%3A0x2e8520dd6b6d8ed!2s307%20Main%20St%20%23105%2C%20Frisco%2C%20TX%2075036%2C%20USA!5e0!3m2!1sen!2sus!4v1697058368765!5m2!1sen!2sus"
+                  allowfullscreen
+                  aria-hidden="false"
+                  tabindex="0"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div
+              class="col-12 col-sm-6 col-lg-3 d-flex flex-column px-3 py-3 p-sm-3"
+            >
+              <div class="footer-section hours">
+                <h3 class="title">Opening</h3>
+                <p>Monday - Saturday<br /><strong>09AM - 09PM</strong></p>
+                <p>Sunday<br /><strong>10AM - 08PM</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <!-- =============================================================================== -->
+    <!-- Powered-By -->
+    <div class="powered-wrapper bg-white">
+      <div class="container">
+        <div class="powered-container text-center">
+          <div class="pb-2 d-flex align-items-center justify-content-center">
+            <h3 class="mt-2 me-2">Powered By :</h3>
+            <a href="home.html"
+              ><img
+                src="Images/footer/Maghil New Logo with Tagline.jpg"
+                alt="maghil logo"
+            /></a>
+          </div>
+          <p class="pb-1 m-0 web-link">
+            <a href=""
+              >Website design, Social Media marketing and Email marketing
+              provided by Maghil.</a
+            >
+          </p>
+          <p class="pb-2 m-0">
+            2024 ©
+            <span class="brand">SideLines - Indian Bar & Kitchen</span> All
+            Right Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

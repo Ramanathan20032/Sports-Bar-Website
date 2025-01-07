@@ -136,6 +136,31 @@
   text-align: center;
   position: relative;
 }
+
+/* ================================================================ */
+/* ANIMATION */
+/* ================================================================ */
+.welcome .container .up {
+  transform: translateY(-150%);
+  opacity: 0;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+.welcome .container .down {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+.welcome .container .animate-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+.welcome .container .animate-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* ================================================================ */
+/* ================================================================ */
+
 .welcome .content h1 {
   font-size: 42px;
   color: #441752;
@@ -215,6 +240,31 @@
   background-size: cover;
   position: relative;
 }
+
+/* ================================================================ */
+/* ANIMATION */
+/* ================================================================ */
+.image-section .up {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+.image-section .down {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+.image-section .animate-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+.image-section .animate-down {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* ================================================================ */
+/* ================================================================ */
+
 .black-box {
   background: #000;
   color: #fff;

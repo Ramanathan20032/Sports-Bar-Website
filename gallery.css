@@ -1,0 +1,282 @@
+/* 
+  font-family: "Oswald", serif;
+  font-family: "Oooh Baby", serif;
+  font-family: "Urbanist", serif; 
+  font-family: "Style Script", serif;
+  font-family: "Oleo Script", serif;
+*/
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Urbanist", serif;
+}
+
+/* ================================================================ */
+/* Navbar */
+.navbar-brand img{
+  width: 120px;
+}
+.nav-link{
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #441752;
+}
+.nav-link:hover{
+  color: #70128d;
+}
+.nav-link.btn-prime{
+  background-color: #441752;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.nav-link.btn-prime:hover {
+  background-color: #FADA7A;
+  color: #441752;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+
+/* ================================================================ */
+/* Media-Query : Navbar  */
+@media screen and (max-width: 576px){
+  .navbar-brand img{
+    width: 100px;
+  }
+}
+   
+
+/* ================================================================ */
+/* Gallery  */
+.gallery-section {
+  padding: 60px 10px 75px 10px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('gallery-page-image/gallery-backgroud.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.gallery-section .gallery-container{
+  position: relative;
+  top: 40px;
+}
+.gallery-section .gallery-container .section-title{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #FADA7A;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 
+               0px 0px 15px rgba(250, 218, 122, 0.9), 
+               0px 0px 30px rgba(250, 218, 122, 0.5);
+}
+.gallery-container .gallery-item{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.gallery-container .gallery-item .gallery-image{
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+} 
+.gallery-container .gallery-item .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.gallery-container .gallery-item .overlay .name {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Light-Box */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.6), 
+              0px 0px 12px rgba(250, 218, 122, 0.6), 
+              0px 0px 10px rgba(250, 218, 122, 0.5);
+  border: 5px solid #FADA7A;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #FADA7A;
+  cursor: pointer;
+}
+
+
+/* ================================================================ */
+/* Media-Query : Gallery  */
+@media screen and (max-width: 991px){
+  
+}
+@media screen and (max-width: 768px){
+  .gallery-section .gallery-container .section-title{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px){
+  .gallery-section{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .gallery-section .gallery-container{
+    top: 20px;
+  }
+  .gallery-section .gallery-container .section-title{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-size: 32px;
+  }
+  .gallery-container .gallery-item .gallery-image{
+    max-height: 240px;
+  }
+}
+
+
+/* ================================================================ */
+/* Footer */
+.footer-wrapper{
+  background-color:#fff; 
+  width: 100%;
+  height: auto;
+}
+.footer-section .title{
+  font-size: 28px;
+  font-weight: 500;
+  color: #FADA7A;
+}
+
+/* contact */
+.footer-wrapper .contact .address{
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+.footer-wrapper .contact .phone{
+  font-size: 16px;
+}
+.footer-wrapper .contact .mail{
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+.footer-wrapper .contact .address:hover,
+.footer-wrapper .contact .phone:hover,
+.footer-wrapper .contact .mail:hover{
+  color: #441752;
+}
+.footer-wrapper .social-icons .s-icon{
+  color: #441752;
+}
+.footer-wrapper .social-icons .s-icon:hover {
+  color: #FADA7A;
+  animation: pulse 0.8s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* quick-links */
+.footer-wrapper .quick-links ul{
+  list-style: none;
+}
+.footer-wrapper .quick-links ul a{
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+.footer-wrapper .quick-links ul a:hover{
+  color: #441752;
+}
+
+.hr{
+  height: 10px;
+  color: #441752;
+  width: 95%;
+  margin: auto;
+}
+
+/* ================================================================ */
+/* Powered-By */
+.powered-wrapper{
+  background-color:#fff; 
+  width: 100%;
+  height: auto;
+}
+.powered-wrapper .powered-container img{
+  width: 130px;
+}
+.powered-wrapper .powered-container a{
+  text-decoration: none;
+  color: #441752;
+}
+.powered-wrapper .powered-container a:hover{
+  color: #FADA7A;
+}
+
+/* ================================================================ */
+/* Media Query : Powered-By */
+@media screen and (max-width: 576px){
+  .powered-wrapper .powered-container img{
+    width: 100px;
+  }
+  .powered-wrapper .powered-container h3{
+    font-size: 22px;
+  }
+}

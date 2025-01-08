@@ -1,5 +1,5 @@
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-// gALLERY IN VIEW
+// GALLERY IN VIEW
 
 // Get all the images inside the gallery
 const galleryImages = document.querySelectorAll(".gallery-container  img");

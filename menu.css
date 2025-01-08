@@ -56,30 +56,55 @@
 }
 
 
+/* ================================================================ */
+/* Menu  */
 
+.menu-wrapper {
+  padding: 65px 10px 65px 10px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('menu-page-image/menu-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.menu-wrapper .menu-container{
+  position: relative;
+  top: 40px;
+}
+.menu-container .head-section h1{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #FADA7A;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 
+               0px 0px 15px rgba(250, 218, 122, 0.9), 
+               0px 0px 30px rgba(250, 218, 122, 0.5);
+}
+.menu-container .head-section .section-button{
+  background-color: #441752;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto; 
+  display: inline-block; 
+}
+.menu-container .head-section .section-button:hover {
+  background-color: #FADA7A;
+  color: #441752;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+.menu-content{
+  border-left: 3px solid #441752;
+}
 
-
-
-
-/* Header Section */
-.menu-header {
-    padding-top: 100px;
-    /* background-image: url('https://via.placeholder.com/1200x400'); Replace with your background image URL */
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    color: rgb(10, 10, 10);
-  }
- 
-  .menu-title {
-    font-size: 3rem;
-    font-weight: bold;
-  }
- 
-  /* Section Title */
-  .section-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
+/* ================================================================ */
+/* Media-Query : Menu  */

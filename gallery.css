@@ -72,8 +72,8 @@
   top: 40px;
 }
 .gallery-section .gallery-container .section-title{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 50px;
   font-weight: 500;
   color: #FADA7A;
@@ -89,6 +89,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  transform: scale(0.5); 
+  opacity: 0; 
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+.gallery-container .gallery-item.animate {
+  transform: scale(1); 
+  opacity: 1; 
 }
 .gallery-container .gallery-item .gallery-image{
   width: 100%;

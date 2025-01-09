@@ -119,13 +119,14 @@
 /* ================================================================ */
 /* Content */
 .content-wrapper{
-  padding: 80px 20px 65px;
+  padding: 80px 20px 80px;
   width: 100%;
   height: auto;
   /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('event-page-images/wall-brick-white-painted.jpg'); */
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('event-page-images/event-content-background.jpg');
   background-position: center;
   background-size: cover;
+  box-shadow: inset 5px 5px 70px 35px rgba(0, 0, 0, 0.8);
 }
 .content-wrapper .content-container h2{
   font-size: 50px;
@@ -136,6 +137,9 @@
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 
                0px 0px 15px rgba(250, 218, 122, 0.9), 
                0px 0px 30px rgba(250, 218, 122, 0.5);     
+}
+.content-wrapper .content-container .row{
+  margin-bottom: 10px;
 }
 
 /* ================================================================ */
@@ -233,7 +237,7 @@
 }
 @media screen and (max-width: 576px){
   .content-wrapper{
-    padding: 70px 16px 65px 16px;
+    padding: 70px 16px 70px 16px;
   }
   .content-wrapper .content-container h2{
     font-size: 32px;

@@ -547,7 +547,7 @@
 
 
 /* ================================================================ */
-/* Media-Query : Gallery */
+/* Media-Query : Event */
 @media screen and (max-width: 992px){
   .event-wrapper {
     height: auto; 

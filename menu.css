@@ -58,19 +58,21 @@
 
 /* ================================================================ */
 /* Menu  */
-
 .menu-wrapper {
   padding: 65px 10px 65px 10px;
   width: 100%;
   height: auto;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('menu-page-image/menu-background.jpg');
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('menu-page-image/menu-backgroung-image.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .menu-wrapper .menu-container{
   position: relative;
-  top: 40px;
+  top: 35px;
+}
+.menu-wrapper .menu-container .row{
+  margin-top: 40px;
 }
 .menu-container .head-section h1{
   padding-top: 15px;
@@ -102,9 +104,87 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
-.menu-content{
-  border-left: 3px solid #441752;
+.cusine-heading{
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #FADA7A;
+}
+.cusine-description{
+  font-size: 18px;
+  padding: 3px 10px;
+  color: #000;
+}
+.cusine-container{
+  border-left: 2px solid #441752;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+.cusine-container .food-name{
+  font-size: 18px;
+  color: #441752;
+}
+.cusine-container .food-price{
+  font-size: 18px;
+  font-weight: 600;
+  color: #70128d;
+}
+.cusine-container .section-x p{
+  font-size: 17px;
+  color: #000;
 }
 
 /* ================================================================ */
 /* Media-Query : Menu  */
+@media screen and (max-width: 991px){
+  .cusine-description{
+    font-size: 16px;
+  }
+  .cusine-container .food-name{
+    font-size: 17px;
+  }
+  .cusine-container .food-price{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px){
+  .menu-container .head-section h1{
+    font-size: 36px;
+  }
+  .cusine-container .section-x p{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px){
+  .menu-wrapper {
+    padding: 65px 10px 50px 10px;
+  }
+  .menu-wrapper .menu-container{
+    top: 20px;
+  }
+  .menu-wrapper .menu-container .row{
+    margin-top: 30px;
+  }
+  .cusine-container{
+    border-left: 1px solid #441752;
+    padding-left: 15px;
+  }
+  .menu-container .head-section h1{
+    font-size: 32px;
+  }
+  .menu-container .head-section .section-button{
+    font-size: 14px;
+  }
+  .cusine-heading{
+    font-size: 28px;
+  }
+  .cusine-container .food-name{
+    font-size: 16px;
+  }
+  .cusine-container .food-price{
+    font-size: 16px;
+  }
+  .cusine-container .section-x p{
+    font-size: 15px;
+  }
+}

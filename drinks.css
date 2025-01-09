@@ -56,22 +56,94 @@
 }
 
 
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('img/e1.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #000;
-  }
-  .container {
-/* max-width: 1200px; */
-margin-top: 90px; /* Adjust margin-top to match navbar height */
-padding: 20px;
-background: rgba(255, 255, 255, 0.8);
+/* ================================================================ */
+/* Media-Query : Drinks  */
+.drinks-wrapper{
+  padding: 65px 10px 65px 10px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('drinks-page-images/drinks-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+.drinks-wrapper .drinks-container{
+  position: relative;
+  top: 35px;
+}
+.drinks-wrapper .drinks-container .row{
+  margin-top: 40px;
+}
+.drinks-container .head-section h1{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #FADA7A;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7), 
+               0px 0px 15px rgba(250, 218, 122, 0.9), 
+               0px 0px 30px rgba(250, 218, 122, 0.5);
+}
+
+.drinks-container .head-section .btn-container .btn-1 {
+  background-color: #441752;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  width: 120px; 
+  text-align: center; 
+}
+.drinks-container .head-section .btn-container .btn-1:hover {
+  background-color: #FADA7A;
+  color: #441752;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* ================================================================ */
+/* Media-Query : Drinks  */
+@media screen and (max-width: 991px){
+  
+}
+@media screen and (max-width: 768px){
+  .drinks-container .head-section h1{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px){
+  .drinks-wrapper {
+    padding: 65px 10px 50px 10px;
+  }
+  .drinks-wrapper .drinks-container{
+    top: 20px;
+  }
+  .drinks-wrapper .drinks-container .row{
+    margin-top: 30px;
+  }
+  .drinks-container .head-section h1{
+    font-size: 32px;
+  }
+  .drinks-container .head-section .section-button{
+    font-size: 14px;
+  }
+}
+
 
   .header {
     /* padding-bottom: 80px;   */
@@ -171,122 +243,3 @@ to {
 border-bottom: none; /* Remove the line below the last item */
 }
 
-
-/* From Uiverse.io by CristianMontoya98 */
-.btn {
-width: 6.5em;
-height: 2.3em;
-margin: 0.5em;
-background: black;
-color: white;
-border: none;
-border-radius: 0.625em;
-font-size: 20px;
-font-weight: bold;
-cursor: pointer;
-position: relative;
-z-index: 1;
-overflow: hidden;
-}
-
-button:hover {
-color: black;
-}
-
-button:after {
-content: "";
-background: white;
-position: absolute;
-z-index: -1;
-left: -20%;
-right: -20%;
-top: 0;
-bottom: 0;
-transform: skewX(-45deg) scale(0, 1);
-transition: all 0.5s;
-}
-
-button:hover:after {
-transform: skewX(-45deg) scale(1, 1);
--webkit-transition: all 0.5s;
-transition: all 0.5s;
-}
-
- /* ================================================================ */
-/* Media Queries */
-
-/* Small devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
-.header h1 {
-  font-size: 36px; /* Reduce header size */
-}
-
-.menu {
-  flex-wrap: wrap; /* Wrap menu items */
-  gap: 10px;
-}
-
-.content {
-  flex-direction: column; /* Stack content sections vertically */
-}
-}
-
-/* Extra small devices (max-width: 576px) */
-@media screen and (max-width: 576px) {
-
-
-.container {
-  margin: 70px auto 0; /* Adjust margin */
-  padding: 15px; /* Less padding */
-}
-
-.content-section {
-  padding: 15px; /* Reduce padding */
-}
-
-.btn {
-  width: 5.5em;
-  height: 2em;
-  font-size: 14px; /* Smaller button size */
-}
-}
-/* Media Query: Small devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
-.navbar-menu {
-  display: none; /* Hide menu by default */
-  flex-direction: column;
-  background-color: white;
-  position: absolute;
-  top: 90px; /* Below navbar */
-  right: 0;
-  left: 0;
-  padding: 10px 0;
-  border: 1px solid #ddd;
-  z-index: 1000;
-}
-
-.navbar-menu.active {
-  display: flex; /* Show menu when active */
-}
-
-}
-
-/* Extra small devices (max-width: 576px) */
-@media screen and (max-width: 576px) {
-
-
-.container {
-  margin: 70px auto 0;
-  padding: 15px;
-}
-
-.content-section {
-  padding: 15px;
-}
-
-.btn {
-  width: 5.5em;
-  height: 2em;
-  font-size: 14px;
-}
-}

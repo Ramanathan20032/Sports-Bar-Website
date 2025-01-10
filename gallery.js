@@ -1,56 +1,58 @@
-// Viewing Image in Larger View
-// Select all overlay elements inside gallery items
-const galleryOverlays = document.querySelectorAll(
-  ".gallery-container .gallery-item .overlay"
-);
+// Select overlay elements
+const mediaItems = document.querySelectorAll('.media-item');
+const overlay = document.getElementById('mediaOverlay');
+const mediaDisplay = overlay.querySelector('.media-display');
+const closeBtn = overlay.querySelector('.close-btn');
 
-// Select the lightbox elements
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const closeBtn = document.querySelector(".lightbox .close");
+// Open overlay on media click
+mediaItems.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    overlay.classList.remove('d-none');
+    overlay.style.display = 'flex';
+    const clone = e.target.cloneNode(true); // Clone the clicked media
+    clone.classList.remove('img-fluid'); // Remove unnecessary classes
 
-// Add click event listener to each overlay
-galleryOverlays.forEach((overlay) => {
-  overlay.addEventListener("click", (e) => {
-    // Find the closest gallery item and its image
-    const galleryItem = overlay.closest(".gallery-item");
-    const image = galleryItem.querySelector("img");
+    // Check if the clicked media is a video
+    if (clone.tagName === 'VIDEO') {
+      clone.removeAttribute('controls'); // Initially remove controls
+      clone.autoplay = true; // Set autoplay for video
+      clone.muted = false; // Ensure audio plays if applicable
+      clone.loop = false; // Optional: Add looping behavior if required
 
-    // Set the image source to the lightbox image
-    lightboxImage.src = image.src;
+      // Add play/pause toggle functionality
+      clone.addEventListener('click', () => {
+        if (clone.paused) {
+          clone.play();
+        } else {
+          clone.pause();
+        }
+      });
 
-    // Show the lightbox
-    lightbox.style.display = "flex";
+      mediaDisplay.innerHTML = ''; // Clear previous content
+      mediaDisplay.appendChild(clone); // Add cloned video
+      clone.play(); // Start playback immediately
+    } else {
+      // Handle non-video media (e.g., images)
+      mediaDisplay.innerHTML = ''; // Clear previous content
+      mediaDisplay.appendChild(clone); // Add cloned media
+    }
   });
 });
 
-// Close lightbox when the close button is clicked
-closeBtn.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+// Function to close overlay
+function closeOverlay() {
+  overlay.classList.add('d-none');
+  overlay.style.display = 'none';
+  mediaDisplay.innerHTML = ''; // Clear content when closed
+}
 
-// Close lightbox when clicking outside the image
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
+// Close overlay on close button click
+closeBtn.addEventListener('click', closeOverlay);
+
+// Close overlay on overlay background click
+overlay.addEventListener('click', (e) => {
+  // Ensure the click is outside the media content
+  if (e.target === overlay) {
+    closeOverlay();
   }
-});
-
-
-// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-// Gallery Section - Animation
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-  document.querySelectorAll('.gallery-section .gallery-item').forEach((item) => {
-    observer.observe(item);
-  })
 });

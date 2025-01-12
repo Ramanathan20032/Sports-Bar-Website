@@ -17,7 +17,7 @@ mediaItems.forEach((item) => {
       clone.removeAttribute('controls'); // Initially remove controls
       clone.autoplay = true; // Set autoplay for video
       clone.muted = false; // Ensure audio plays if applicable
-      clone.loop = false; // Optional: Add looping behavior if required
+      clone.loop = true; // Optional: Add looping behavior if required
 
       // Add play/pause toggle functionality
       clone.addEventListener('click', () => {
